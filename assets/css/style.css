@@ -1,0 +1,98 @@
+body,
+html {
+  height: 100%;
+  font-family: 'Raleway', verdana;
+}
+
+.row {
+  padding-top: 7%;
+}
+
+.bg {
+  background-image: url('../img/backgrounds/home.png');
+  height: 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  margin-top: 10px;
+  box-shadow: none;
+  font-family: 'Raleway', verdana;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.navbar-collapse {
+  margin-top: 20px;
+}
+
+.active {
+  border: 1px solid black;
+}
+
+.sub-title {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: 'Sofia', cursive;
+}
+
+#fadeIn-content {
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+}
+
+/* Media */
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+  }
+  .bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 102%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bg {
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .bg {
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/* SVG */
+#buck {
+  stroke-dasharray: 10000;
+  animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 10000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
